@@ -1,4 +1,4 @@
 <h5>All realestates</h5>
 <div *ngFor="let cust of Realestate">
-  <a [routerLink]="['/Realestate', cust.id]" style="color:black"><span class="badge badge-danger">{{cust.ref_no}}</span> -> {{ cust.address }}</a>
+  <a [routerLink]="['/Realestate', cust.id]" style="color:black"><span class="badge badge-danger">{{cust.ref_no}}</span> -> {{ cust.category.name }}</a>
 </div>
