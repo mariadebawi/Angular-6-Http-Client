@@ -1,0 +1,4 @@
+<h5>All Categories</h5>
+<div *ngFor="let cust of categories">
+  <a [routerLink]="['/categories', cust.id]" style="color:black"><span class="badge badge-dark">{{cust.id}}</span> -> {{ cust.name }}</a>
+</div>
